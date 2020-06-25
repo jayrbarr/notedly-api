@@ -1,8 +1,8 @@
 module.exports = {
-  notes: async (parent, args, { models }) => await models.Note.find(),
+  notes: async (parent, args, { models }) => await models.Note.find().limit(100),
   note: async (parent, args, { models }) => await models.Note.findById(args.id),
   user: async (parent, { username }, { models }) => await models.User.findOne({ username }),
-  users: async (parent, args, { models }) => await models.User.find(),
+  users: async (parent, args, { models }) => await models.User.find().limit(100),
   me: async (parent, args, { models, user }) => await models.User.findById(user.id),
   noteFeed: async (parent, { cursor }, { models }) => {
     const limit = 10;
