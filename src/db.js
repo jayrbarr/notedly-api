@@ -10,7 +10,7 @@ module.exports = {
     mongoose.connection.on('error', err => {
       console.error(err);
       console.log(
-        'MongoDB connection error. Please make sure MongoDB is running.'
+        'MongoDB connection error. Is MongoDB server running?'
       );
       process.exit();
     });

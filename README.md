@@ -1,6 +1,6 @@
 <img src="cover.png" width="200" align="right" />
 
-# JavaScript Everywhere API
+# Notedly API
 
 This repository contains code examples for the API chapters of [_JavaScript Everywhere_](https://www.jseverywhere.io/) by Adam D. Scott, published by O'Reilly Media
 
