@@ -1,9 +1,9 @@
 /* Helper file for seeding user data during testing or local development */
 
-const models = require('../../models');
+const models = require('../src/models');
 const seedUsers = require('./users');
 const seedNotes = require('./notes');
-const db = require('../../db');
+const db = require('../src/db');
 require('dotenv').config();
 
 const DB_HOST = process.env.DB_HOST;

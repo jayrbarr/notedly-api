@@ -4,7 +4,7 @@
 const faker = require('faker');
 const bcrypt = require('bcrypt');
 
-const gravatar = require('../gravatar');
+const gravatar = require('../src/util/gravatar');
 
 const seedUsers = async () => {
   console.log('Seeding users...');
